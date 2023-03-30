@@ -49,22 +49,43 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzK-eR-Kcx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACs-ay-x0u">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QzP-KC-4x2">
                                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="Add Image"/>
-                                                                        <connections>
-                                                                            <action selector="didAddPhotosClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kat-qp-eRg"/>
-                                                                        </connections>
-                                                                    </button>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACs-ay-x0u">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="30"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="Add Image"/>
+                                                                                <connections>
+                                                                                    <action selector="didAddPhotosClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kat-qp-eRg"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubi-F7-Xut">
+                                                                                <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="30"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="Color Adjust"/>
+                                                                                <connections>
+                                                                                    <action selector="addColorAdjust:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSR-7M-Vqg"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV2-ii-qZm">
+                                                                                <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="30"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="Filters"/>
+                                                                                <connections>
+                                                                                    <action selector="addFilterDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAW-xw-qkd"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstItem="ACs-ay-x0u" firstAttribute="height" secondItem="PzK-eR-Kcx" secondAttribute="height" id="Skl-sR-w35"/>
+                                                                    <constraint firstItem="QzP-KC-4x2" firstAttribute="centerX" secondItem="PzK-eR-Kcx" secondAttribute="centerX" id="BHB-Zl-Mh5"/>
                                                                     <constraint firstAttribute="height" constant="30" id="UMc-eh-QUi"/>
-                                                                    <constraint firstItem="ACs-ay-x0u" firstAttribute="width" secondItem="PzK-eR-Kcx" secondAttribute="width" id="aDL-0c-wW5"/>
-                                                                    <constraint firstItem="ACs-ay-x0u" firstAttribute="centerX" secondItem="PzK-eR-Kcx" secondAttribute="centerX" id="kNT-HU-8cf"/>
-                                                                    <constraint firstItem="ACs-ay-x0u" firstAttribute="centerY" secondItem="PzK-eR-Kcx" secondAttribute="centerY" id="rfc-ht-mQm"/>
+                                                                    <constraint firstItem="QzP-KC-4x2" firstAttribute="height" secondItem="PzK-eR-Kcx" secondAttribute="height" id="UjX-z5-rDg"/>
+                                                                    <constraint firstItem="QzP-KC-4x2" firstAttribute="centerY" secondItem="PzK-eR-Kcx" secondAttribute="centerY" id="VhG-HP-WlS"/>
+                                                                    <constraint firstItem="QzP-KC-4x2" firstAttribute="width" secondItem="PzK-eR-Kcx" secondAttribute="width" id="zaq-YP-ztg"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjT-DY-GcQ">
@@ -126,7 +147,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addImageButton" destination="ACs-ay-x0u" id="96S-R7-x43"/>
+                        <outlet property="addColorAdjust" destination="Ubi-F7-Xut" id="sJW-Ve-iyr"/>
+                        <outlet property="addFilter" destination="sV2-ii-qZm" id="d5J-ml-3Ly"/>
+                        <outlet property="addImageButton" destination="ACs-ay-x0u" id="YGb-in-SZe"/>
                         <outlet property="collectionViewPlaceHolder" destination="eQf-an-pMc" id="yei-PG-2cf"/>
                         <outlet property="filterSlider" destination="jxX-D6-yj9" id="KSh-Zu-MOE"/>
                         <outlet property="imageView" destination="fog-ZF-olg" id="hEL-Kb-5Ta"/>

@@ -36,7 +36,8 @@ class ViewController: UIViewController, ReusableCVDelegate, PHPickerViewControll
     @IBOutlet weak var filterSlider:UISlider!
     @IBOutlet weak var addImageButton:UIButton!
     @IBOutlet weak var collectionViewPlaceHolder:UIView!
-    
+    @IBOutlet weak var addFilter:UIButton!
+    @IBOutlet weak var addColorAdjust:UIButton!
     
     var viewModel = HomeViewModel()
     
@@ -60,9 +61,18 @@ class ViewController: UIViewController, ReusableCVDelegate, PHPickerViewControll
    @IBAction func didAddPhotosClicked(_ sender:UIButton){
         openGallary()
     }
+    @IBAction func addFilterDidClicked(_ sender:UIButton){
+        viewModel.listOfFilters = filters
+    }
+    @IBAction func addColorAdjust(_ sender:UIButton){
+        viewModel.listOfFilters = colorAdjust
+        collectionView.collectionView.reloadData()
+    }
+    
+    
     @IBAction func didFilterValueChanged(_ sender:UISlider){
         viewModel.valueChanged(CGFloat(sender.value))
-      
+        collectionView.collectionView.reloadData()
     }
 
     
