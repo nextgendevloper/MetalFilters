@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MetalFilters/Pods-MetalFilters-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IOSReusableCV/IOSReusableCV.framework
+${BUILT_PRODUCTS_DIR}/IOS_CommonUtil/IOS_CommonUtil.framework

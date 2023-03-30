@@ -1,0 +1,6 @@
+framework module IOSReusableCV {
+  umbrella header "IOSReusableCV-umbrella.h"
+
+  export *
+  module * { export * }
+}

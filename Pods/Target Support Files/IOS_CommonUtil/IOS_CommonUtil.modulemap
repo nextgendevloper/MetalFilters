@@ -1,0 +1,6 @@
+framework module IOS_CommonUtil {
+  umbrella header "IOS_CommonUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

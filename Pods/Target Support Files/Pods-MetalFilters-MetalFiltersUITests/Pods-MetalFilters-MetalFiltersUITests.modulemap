@@ -1,0 +1,6 @@
+framework module Pods_MetalFilters_MetalFiltersUITests {
+  umbrella header "Pods-MetalFilters-MetalFiltersUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

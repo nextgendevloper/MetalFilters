@@ -1,0 +1,21 @@
+PODS:
+  - IOS_CommonUtil (0.6.5)
+  - IOSReusableCV (0.2.0):
+    - IOS_CommonUtil
+
+DEPENDENCIES:
+  - IOS_CommonUtil
+  - IOSReusableCV
+
+SPEC REPOS:
+  https://github.com/Mobisoft-Labs/IOSPodSpec.git:
+    - IOS_CommonUtil
+    - IOSReusableCV
+
+SPEC CHECKSUMS:
+  IOS_CommonUtil: 9a949ad23921332447b6760032f53aa28425a14b
+  IOSReusableCV: 799e50ae0d18157741e57f2efbe1d5ce8974f22a
+
+PODFILE CHECKSUM: ad76204ca4df3193265b5f657d68a0702f1b2f56
+
+COCOAPODS: 1.11.3

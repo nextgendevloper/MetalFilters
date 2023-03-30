@@ -1,0 +1,276 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Developer on 10/16/20.
+  
+*/
+
+// Global Keywords --------------------------->>>>>>>>
+
+"_Ok" = "Ok";
+"_Done" = "Done";
+"_Cancel" = "Cancel";
+"_Back" = "Back";
+"_OpenSettings" = "Open the Settings app.";
+"_Loading" = "Loading";
+"_Close" = "Close";
+"_Alert" = "Alert";
+"_TryAgain" = "Try Again";
+"_Later" = "Later";
+"_Font" = "Font";
+"_Transparency" = "Transparency";
+"_Fonts" = "Fonts";
+// Color Picker --------------------------->>>>>>>>
+"_Color" = "Color";
+"_COLOR" = "COLOR";
+"_Colors" = "Colors";
+// Grad Picker --------------------------->>>>>>>>
+"_Gradient" = "Gradient";
+"_Linear" = "Linear";
+"_Radial" = "Radial";
+// Permissions --------------------------->>>>>>>>
+"_askForPhotoPermissionChange_main_" = "It looks like your privacy settings are preventing us from accessing your Photo Library to fetch Photos. You can fix this by doing the following:";
+"_askForPhotoPermissionChange_step1_" = "Touch Open Settings button below to open the Settings app.";
+"_askForPhotoPermissionChange_step3_" = "Open this app and try again.";
+"_askForPhotoPermissionChange_step2_" = "Tap on Photos and select All Photos or Selected Photos";
+"_askForMusicPermissionChange_main_" = "It looks like your privacy settings are preventing us from accessing your Music Library to fetch Music. You can fix this by doing the following:";
+"_askForMusicPermissionChange_step1_" = "Touch Open Settings button below to open the Settings app.";
+"_askForMusicPermissionChange_step3_" = "Open this app and try again.";
+"_askForMusicPermissionChange_step2_" = "Turn on the toggle switch in front of Media & Apple Music";
+"_askForNotificationPermissionChange_main_" = "It looks like your privacy settings are preventing us from accessing your Photo Library to fetch Photos. You can fix this by doing the following:";
+"_askForNotificationPermissionChange_step1_" = "Touch Open Settings button below to open the Settings app.";
+"_askForNotificationPermissionChange_step3_" = "Open this app and try again.";
+"_askForNotificationPermissionChange_step2_" = "Tap on Notification and Toggle ON switch to allow the notification";
+// Swift Error --------------------------->>>>>>>>
+"_NoInternet" = "No Internet";
+"_NoInternet_Body" = " something went wrong. Please check your internet connection and try again.";
+"_ErrorOcuured" = "Error Occured";
+"_ErrorWhileSaving" = "Error while saving";
+"_AppNotInstalled" = "App not installed.";
+"_AppNotInstalled_Body"= "Please download app from appstore first and try again.";
+"_SomethingWentWrongPleaseTryAgain" = "Oops! something went wrong. Please try again.";
+"_PermissionError" = "Access not available";
+// Swift Message --------------------------->>>>>>>>
+"_SavedSuccessfully" = "Saved Succesfully";
+"_Audio_Writing_Failed" = "Unable to decode Audio (may be unsupported or currupt file)";
+"_Metal_Configuration_Error" = "Oops! something went wrong. Please try again.";
+"_VIDEO_ERROR" = "No Supported Video found";
+"_IMAGE_ERROR" = "Error while getting image. Please try again.";
+// Text
+"_EnterTextToProceed" = "Please enter some text..";
+"_Text" = "Text";
+"_TextEdit" = "Edit Text";
+// VIDEO
+"_TimelapseVideoError_body" = "This video is timelapse type.Please select another to continue";
+"_TimelapseVideoError_title" = "TimeLapse Video";
+"_iCloudVideoError_body" = "This video is available in iCloud.Please download first from iCloud to continue";
+"_iCloudVideoError_title" = "iCloud Video";
+"_UE_SelectAnother" = "Unknown Error. Please Select Another Video";
+"_NoSupportedVideoFound" = "No Supported Video found";
+//IMAGE
+"_Image" = "Image";
+"_IE_TryAgain" = "Error while getting image. Please try again.";
+//MUSIC
+"_Music" = "Music";
+"_ImportFromItunes" = "Import From iTunes";
+"_AudioDecodingFailed" = "Unable to decode Audio (may be unsupported or currupt file)";
+"_SongNotAvailable" = "Song Not Available";
+"_SongAdded" = "Song Added";
+"_SongDRMProtected_Body1" = "This song is DRM Protected by Apple music ";
+"_SongDRMProtected_Body2" = " Please choose offline music";
+"_SongLoaded"="Song Loaded";
+// ERRORS
+"_ErrorInSelection" = "Error In Selection";
+"_Error" = "Error";
+"_AppNotInstalled_msg_" = "App not installed.";
+"_AppReadContent_msg_" = "Unable to share. visit help center.";
+"_SWW_TryAgain" = "Oops! something went wrong. Please try again.";
+// IAP
+"_RestoreSuccessfully" = "Successfully Restored.";
+"_NoWatermark" = "No Watermark";
+"_NoAds" = "No Ads";
+"_PrivacyPolicy" = "Privacy Policy";
+"_SubscriptionDetails" = "Subscription Details";
+"_TernsAndConditions" = "Terms And Condition";
+"_Restore" = "Restore";
+"_GoPro" = "Go Pro";
+"_OneTime" = "One Time";
+// FEEDBACK
+"_DidYouLikeYour" = "Did you like your Textro ";
+"_FeedbackBody_HowYoufeel" = "We tried to make this app helpful and easy to use. Please select how you feel.";
+"_Good" = "Good";
+"_Bad" = "Bad";
+"_Excellent" = "Excellent";
+"_Privacy" = "Privacy";
+"_NeedHelp" = "Need Help?";
+"_FeedbackBody_DontWorry" = "Don't worry, we are here to help you.";
+"_GiveSuggestion" = "Give Suggestion";
+"_GoodDescription" = "Or maybe, ask for a new feature.";
+"_ThankYou" = "Thank You!";
+"_ExcellentDescription" = "Will you write a Review on App Store?";
+"_ASK_FOR_HELP" = "ASK FOR HELP";
+"_Send" = "Send";
+"_ReviewNow" = "Review Now";
+"_TapToRemove" = "Tap to remove";
+"_MoreInHouseApps"="More Apps";
+"_EmailServiceNotAvailable" = " Service not available now. ";
+"_WriteYourSuggestionBelow" = "Write your problems or suggestions here..";
+"_media_report_title" = "Can you please add this media as an attachment?. It will really help us better to understand the issue .";
+"_report_us" = "Report this issue";
+"_media_error_body" = "Something went wrong while getting media.";
+"_media_error_title" = "No Media Found.";
+// onboard
+"_AP_PhotoLibrary" = "We need permission to access your photo library in order to read and write media to your device ";
+"_Notification" = "Notification";
+"_AP_Notification" = "We need permission to be able to notify you from app about task status ";
+"_PhotoLibrary" = "Photo Library";
+"_Allow_Access" = "Allow Access";
+// menu
+"_Menu" = "Menu";
+"_Rate_Us" = "Rate Us";
+"_More_Apps" = "More Apps";
+"_Share_App" = "Share";
+// IMPORT EXPORT
+"_NoDesignsFoundToTransfer" = "No designs Found To Transfer";
+"_TranferFailed" = "Transfer Failed";
+"_IncorrectZip" = "Incorrect Zip";
+"_RestoreFailed" = "Restore Failed";
+"_Success" = "Success";
+"_ImagesMissingDesignsMayNotDisplayProper" = "Images Are Missing. Some Designs May Not Display Properly";
+"_TransferDesigns" = "Transfer Designs";
+"_RestoreDesigns" = "Restore Designs";
+//Reusable added
+"Subscribe_Now_" = "SUBSCRIBE NOW";
+"Continue_" = "Continue";
+"Privacy_Policy_" = "Privacy Policy";
+"Terms_Conditions_" = "Terms And Condition";
+"Skip_" = "Skip";
+"Version_" = "Version";
+"About_Us_" = "About";
+"Help_Center_" = "Help Center";
+"Rate_Us_" = "Rate Us";
+"Restore_Purchase_" = "Restore Purchases";
+"Ok_" = "Ok";
+"Delete_" = "Delete";
+"Save_" = "Save";
+"Donot_Save_" = "Don't Save";
+"New_" = "NEW";
+"SEND_CRASH_REPORT_" = "App closed unexpectedly";
+"Send_Crash_BODY_" = "You can send report of your last sessions to our support to help us fix this issue in upcoming release.";
+"Send_Report_" = "Send Report";
+"_report_us" = "Report issue";
+"Show_Media_Error_Body" = "Something went wrong while getting media.";
+"Saving_" = "Saving";
+"PHOTOS_" = "Photos";
+"VIDEO_" = "VIDEO";
+"Ask_For_Help_Button_Text_" = "Ask For Help";
+"Unlock_All_Feature_" = "Unlock All Feature";
+"No_Commitments_" = "No Commitments";
+"Cancel_Anytime_" = "Cancel Anytime";
+"Use_All_Feature_For_Free_" = "Use all feature for free.";
+"Already_Purchased_" = "Already Purchased. ";
+"Month_" = "Month";
+"Year_" = "Year";
+"Premium_" = "Go Pro";
+"No_Ads_" = "No Ads";
+"No_More_Ads_" = "No More Ads";
+"Subscription_Details_Btn" = "Subscription Details";
+"Subscription_Details_Body2" = "Life-Time";
+"Subscription_Details_Bullet6" = "This is one time purchase for your registered Apple ID. Once you purchase LifeTime you dont need to buy or renew again and again.The product is your’s for lifetime including future updates and features.";
+"Remove_Ads_" = "Remove ads";
+"Remove_Permanently_" = "Remove Permanently";
+"Permission!_" = "Permission!";
+"AskForPermission_" = "We understand that privacy is important and we respect your privacy.To access your device data app needs your permission for below mentions.";
+"AskForPermission2_" = "You can click on 'Continue' button to accept or deny these permissions.";
+"Whats_New_In" = "Whats New";
+"Share_Via_" = "Share Via";
+"Saved_In_Photos_" = "Saved in photos";
+"Explore_" = "Explore";
+"Share_To_Friend_" = "Share to Friend";
+"Follow_On_Instagram_" = "Follow on Instagram";
+"More_Apps_" = "More Apps";
+"Visit_App_Store_" = "App Store";
+"Got_Suggestion_" = "Got Suggestion ?";
+"Give_Suggestion_Text_" = "We'd love to hear your thoughts on how we could improve the app.";
+"Give_Suggestion_Button_Text_" = "Send Suggestion!";
+"Need_Help_" = "Need Help?";
+"Ask_For_Help_Text_" = "Don't worry, we are here to help you.";
+"Found_A_Bug_" = "Found A Bug ?";
+"Report_A_Bug_Text_" = "Please let us know. We will get back to you.";
+"Report_A_Bug_Button_Text_" = "Report A Bug";
+"Thank_You_" = "Thank You!";
+"Will_You_Write_Review_Text_" = "Will you write a Review on App Store?";
+"Review_Now_" = "Review Now";
+"FAQ_" = "Help & Faq";
+"Saving_Cancelled_" = "Saving Cancelled";
+"Saving_Failed_" = "Saving Failed";
+"Saving_Failed_Message_" = "SomeThing Went Wrong While Saving. Please contact support";
+"Save_All_" = "Save All";
+"Yes_" = "Yes";
+"No_" = "No";
+"Left_" = "Left";
+"Right_" = "Right";
+"Up_" = "Up";
+"Down_" = "Down";
+"Scale_" = "Scale";
+"Margin_" = "Margin";
+"Rotation_" = "Rotation";
+"Opacity_" = "Opacity";
+"Hue_" = "Hue";
+"Apperance_" = "Appearance";
+"Reset_" = "Reset";
+"Menu_" = "Menu";
+"App_DoesNot_Installed_" = "App not installed.";
+"Mail_Draft_" = "Mail Saved As Draft";
+"Mail_Sent_" = "Mail sent to developer";
+"Mail_Failed_" = "Unable to send. Please try again";
+"Purchase_Restored_" = "Successfully Restored.";
+"Purchase_Not_Found" = "No purchase were found..";
+"Purchase_Success_" = "Purchase successful";
+"Purchase_Failed_" = "Purchase Failed";
+"Payment_Failed_" = "Payment Failed";
+"Payment_Disabled_" = "Payment Disabled";
+"We_Will_Get_Back_To_You_" = "We will get back to you.";
+"Suggestion_Mail_Body_" = "Write your problems or suggestions here..";
+"Need_Help_Mail_Body_" = "Please write your concern in detail below.";
+"Bug_Mail_Body_" = "We really appreciate your help. Please describe bug or issue in detail below.";
+"Crash_Report_Mail_Body_" = "Thank you for sending us crash report.";
+"Error_Report_Mail_Body_" = "Thank you for sending us error report.";
+"Error_Mail_Body_" = "We are sorry for inconvenience caused. ";
+"Please_Wait_" = "Please Wait..";
+"Processing_" = "Processing";
+"TEXT_MOVE_Duplicate_BUTTON" = "Duplicate";
+"PICK_TEXT_COLORBUTTON_TITLE_moreButton" = "More";
+"PICK_TEXT_COLORBUTTON_TITLE_pickButton" = "Pick";
+"Ask_For_Feature_" = "Ask for feature?";
+"Ads_May_Appear_Here_" = "Ads may appear here";
+"currentColorLabel" = "Current";
+"pickedColorLabel" = "Picked";
+"colorPickerNavBAr" = "Custom Color Picker";
+"Share_" = "Share";
+"Subscription_Details:_"= "Subscription Details : ";
+"Subscription_Details_Body1_" = "Monthly / Yearly Subscriptions : ";
+"Subscription_Details_Bullet1" = "This Purchased can only be used on IOS System.";
+"Subscription_Details_Bullet2" = "Payment will be charged to iTunes Account at confirmation of purchase.";
+"Subscription_Details_Bullet2A" = "Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period.";
+"Subscription_Details_Bullet3" = " Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal.";
+"Subscription_Details_Bullet4" = "Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase";
+"Subscription_Details_Bullet5" = "Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable";
+"_Warning" = "Warning";
+"_Info" = "Info";
+"_Select_Min_Image" = "Select at least one image";
+"_Select_All" = "Select All";
+"_Deselect_All" = "De-select All";
+"More_" = "More";
+"Do_not_lock" = "Please do not lock your device or minimize the app while saving is in progress";
+"_Cancelling..." = "Cancelling...";
+"_Starting..." = "Processing";
+"_Saving_In_Progress" = "Saving In progress";
+"_Completed" = "Completed";
+"Start_time_" = "Start Time";
+"End_Time_" = "End Time";
+"None" = "None";
+"Choose_" = "Choose";
+
+
