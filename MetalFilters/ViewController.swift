@@ -62,17 +62,18 @@ class ViewController: UIViewController, ReusableCVDelegate, PHPickerViewControll
         openGallary()
     }
     @IBAction func addFilterDidClicked(_ sender:UIButton){
-        viewModel.listOfFilters = filters
+        viewModel.listOfFilters = colorAdjust
+        collectionView.collectionView.reloadData()
     }
     @IBAction func addColorAdjust(_ sender:UIButton){
-        viewModel.listOfFilters = colorAdjust
+        viewModel.listOfFilters = filters
         collectionView.collectionView.reloadData()
     }
     
     
     @IBAction func didFilterValueChanged(_ sender:UISlider){
         viewModel.valueChanged(CGFloat(sender.value))
-        collectionView.collectionView.reloadData()
+       
     }
 
     

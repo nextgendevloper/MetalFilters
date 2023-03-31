@@ -10,9 +10,9 @@ import Foundation
 class GlassSphere:ColorAdjustProtocol{
     var kernalName: String = "glassSphere"
     
-    var value: Float = 0.0
+    var value: Float = 0.01
     
-    var min: CGFloat = 0.9
+    var min: CGFloat = 0.0
     
     var max: CGFloat = 1.0
     

@@ -10,11 +10,11 @@ import Foundation
 class BilateralBlur:ColorAdjustProtocol{
     var kernalName: String = "bilateralBlur"
     
-    var value: Float = 0.0
+    var value: Float = 4.0
     
-    var min: CGFloat = 0.9
+    var min: CGFloat = 0.0
     
-    var max: CGFloat = 1.0
+    var max: CGFloat = 6.0
     
     
 }

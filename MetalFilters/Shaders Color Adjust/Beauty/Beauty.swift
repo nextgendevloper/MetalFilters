@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Blur:ColorAdjustProtocol{
-    var kernalName: String = "blur"
+class Beauty:ColorAdjustProtocol{
+    var kernalName: String = "beauty"
     
     var value: Float = 0.0
     

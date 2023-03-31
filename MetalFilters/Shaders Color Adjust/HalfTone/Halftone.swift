@@ -8,7 +8,7 @@
 import Foundation
 
 class HalfTone:ColorAdjustProtocol{
-    var kernalName: String = "halfTone"
+    var kernalName: String = "halftone"
     
     var value: Float = 0.0
     

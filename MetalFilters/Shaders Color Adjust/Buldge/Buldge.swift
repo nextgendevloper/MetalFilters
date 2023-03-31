@@ -12,7 +12,7 @@ class Bludge:ColorAdjustProtocol{
     
     var value: Float = 0.0
     
-    var min: CGFloat = 0.9
+    var min: CGFloat = 0.0
     
     var max: CGFloat = 1.0
     
