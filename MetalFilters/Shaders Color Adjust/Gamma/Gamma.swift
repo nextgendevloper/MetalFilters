@@ -10,7 +10,7 @@ import Foundation
 class Gamma:ColorAdjustProtocol{
     var kernalName: String = "gamma"
     
-    var value: Float = 0.5
+    var value: [Float] = [0.5]
     
     var min: CGFloat = 0.5
     

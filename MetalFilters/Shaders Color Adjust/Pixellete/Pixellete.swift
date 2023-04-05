@@ -10,7 +10,7 @@ import Foundation
 class Pixellete:ColorAdjustProtocol{
     var kernalName: String = "pixellete"
     
-    var value: Float = 0.01
+    var value: [Float] = [0.01]
     
     var min: CGFloat = 0.01
     

@@ -9,7 +9,7 @@ import Foundation
 class WhiteBalance:ColorAdjustProtocol{
     var kernalName: String = "whiteBalance"
     
-    var value: Float = 0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = -1.0
     

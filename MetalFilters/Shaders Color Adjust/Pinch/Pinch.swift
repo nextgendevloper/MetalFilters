@@ -10,7 +10,7 @@ import Foundation
 class Pinch:ColorAdjustProtocol{
     var kernalName: String = "pinch"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = 0.0
     

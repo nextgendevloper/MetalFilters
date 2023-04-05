@@ -10,7 +10,7 @@ import Foundation
 class Vibrance:ColorAdjustProtocol{
     var kernalName: String = "vibrance"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = -1.0
     

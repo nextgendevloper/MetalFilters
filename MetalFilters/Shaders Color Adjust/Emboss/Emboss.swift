@@ -10,9 +10,9 @@ import Foundation
 class Emposs:ColorAdjustProtocol{
     var kernalName: String = "emposs"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
-    var min: CGFloat = 0.9
+    var min: CGFloat = -1.0
     
     var max: CGFloat = 1.0
     

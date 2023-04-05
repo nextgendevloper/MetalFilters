@@ -89,7 +89,7 @@ class ViewController: UIViewController, ReusableCVDelegate, PHPickerViewControll
     }
     func openGallary() {
         var configuration = PHPickerConfiguration()
-        configuration.selectionLimit = 1
+        configuration.selectionLimit = 2
         configuration.preferredAssetRepresentationMode = .automatic
          let picker = PHPickerViewController(configuration: configuration)
         picker.delegate = self
@@ -99,13 +99,15 @@ class ViewController: UIViewController, ReusableCVDelegate, PHPickerViewControll
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         dismiss(animated: true)
         let itemProviders = results.map(\.itemProvider)
+        var count = 0
         for item in itemProviders {
             if item.canLoadObject(ofClass: UIImage.self) {
                 item.loadObject(ofClass: UIImage.self) { (image, error) in
                     DispatchQueue.main.async { [self] in
                         if let image = image as? UIImage {
                             self.imageView.image = image
-                            viewModel.currentImage = image
+                            viewModel.currentImage.append(image)
+                            count+=1
                         }
                     }
                 }

@@ -10,7 +10,7 @@ import Foundation
 class Swirl:ColorAdjustProtocol{
     var kernalName: String = "swirl"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = 0.0
     

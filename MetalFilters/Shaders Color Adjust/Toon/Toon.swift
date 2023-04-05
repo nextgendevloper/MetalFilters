@@ -10,7 +10,7 @@ import Foundation
 class Toon:ColorAdjustProtocol{
     var kernalName: String = "toon"
     
-    var value: Float = 1.0
+    var value: [Float] = [1.0]
     
     var min: CGFloat = 0.0
     

@@ -10,7 +10,7 @@ import Foundation
 class Sharpness:ColorAdjustProtocol{
     var kernalName: String = "sharpness"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = -1.0
     

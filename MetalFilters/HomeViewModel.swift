@@ -12,7 +12,7 @@ class HomeViewModel{
     
     var listOfFilters:[ColorAdjustProtocol]
     var currentfilter:ColorAdjustProtocol?
-    var currentImage:UIImage?
+    var currentImage = [UIImage]()
     var onSliderValueChanged:((UIImage?)->())?
     var onSliderMinMax:((CGFloat?,CGFloat?,Float?)->())?
     
@@ -25,14 +25,14 @@ class HomeViewModel{
        
             currentfilter = listOfFilters[indexPath.item]
             onSliderValueChanged?(getColorAdjustImage())
-        onSliderMinMax?(currentfilter?.min,currentfilter?.max, currentfilter?.value)
+        onSliderMinMax?(currentfilter?.min,currentfilter?.max, currentfilter?.value[0])
             
         
       
     }
     
     func valueChanged(_ value:CGFloat){
-        currentfilter?.value = Float(value)
+        currentfilter?.value[0] = Float(value)
         onSliderValueChanged?(getColorAdjustImage())
         
     }
@@ -43,12 +43,18 @@ class HomeViewModel{
     }
     
     func getColorAdjustImage()->UIImage?{
+       var textures = [MTLTexture]()
+        var outputTexture:MTLTexture?
+        for image in currentImage{
+            let inputTexture = image.toTexture()
+            textures.append(inputTexture!)
+            outputTexture = inputTexture
+            
+        }
        
-        let inputTexture = currentImage?.toTexture()
+        textures.append(outputTexture!)
         
-        let outputTexture = inputTexture
-        
-         let textures = [inputTexture!,outputTexture!]
+       
        let pipeLineState =  Compute.getPipelineState(filterModel: currentfilter!)
     
         Compute.adjustColor(textures: textures, model: currentfilter!, state: pipeLineState!)

@@ -10,7 +10,7 @@ import Foundation
 class Sobel:ColorAdjustProtocol{
     var kernalName: String = "sobel"
     
-    var value: Float = 1.0
+    var value: [Float] = [1.0]
     
     var min: CGFloat = 1.0
     

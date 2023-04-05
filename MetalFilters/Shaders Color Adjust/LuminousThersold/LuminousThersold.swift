@@ -10,7 +10,7 @@ import Foundation
 class LuminousThersold:ColorAdjustProtocol{
     var kernalName: String = "luminousThersold"
     
-    var value: Float = 0.01
+    var value: [Float] = [0.01]
     
     var min: CGFloat = 0.01
     

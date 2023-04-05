@@ -8,9 +8,10 @@
 import Foundation
 
 class Beauty:ColorAdjustProtocol{
+    var value: [Float] = [0.0]
+    
     var kernalName: String = "beauty"
     
-    var value: Float = 0.0
     
     var min: CGFloat = 0.9
     

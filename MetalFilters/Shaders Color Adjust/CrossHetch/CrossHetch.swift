@@ -11,7 +11,7 @@ import Foundation
 class CrossHetch:ColorAdjustProtocol{
     var kernalName: String = "crossHetch"
     
-    var value: Float = 0.2
+    var value: [Float] = [0.2]
     
     var min: CGFloat = 0.0
     

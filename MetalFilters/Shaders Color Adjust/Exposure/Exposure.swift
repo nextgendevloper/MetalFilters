@@ -10,7 +10,7 @@ import Foundation
 class Exposure:ColorAdjustProtocol{
     var kernalName: String = "exposure"
     
-    var value: Float = -4.0
+    var value: [Float] = [-4.0]
     
     var min: CGFloat = -4.0
     

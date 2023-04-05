@@ -16,7 +16,7 @@ final class Compute {
 
   
    static func getPipelineState(filterModel:ColorAdjustProtocol) -> MTLComputePipelineState? {
-       effect = CGFloat(filterModel.value)
+//       effect = CGFloat(filterModel.value)
 
         let constantValues = MTLFunctionConstantValues()
         constantValues.setConstantValue(&self.deviceSupportsNonuniformThreadgroups,
@@ -55,10 +55,18 @@ static func adjustColor(textures:[MTLTexture],model:ColorAdjustProtocol,state:MT
         }
         
         // encoder.setBytes(filter.value , Float.size)
-        
-    encoder.setBytes(&filterModel.value,
-                         length: MemoryLayout<Float>.stride,
-                         index: 0)
+    var count = 0
+    for val in filterModel.value{
+        var value:Float = val
+        encoder.setBytes(&value,
+                             length: MemoryLayout<Float>.size,
+                             index: count)
+        count += 1
+    }
+   
+    if let filter = model as? SpecialColorAdjust{
+        filter.setupSpecialParameters(encoder: encoder, index: count)
+    }
 
         let gridSize = MTLSize(width: textures[0].width,
                                height: textures[0].height,

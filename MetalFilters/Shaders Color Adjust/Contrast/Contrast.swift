@@ -11,7 +11,7 @@ import Foundation
 class Contrast:ColorAdjustProtocol{
     var kernalName: String = "contrast"
     
-    var value: Float = 1.0
+    var value: [Float] = [1.0]
     
     var min: CGFloat = 0.5
     

@@ -10,7 +10,7 @@ import Foundation
 class ZoomBlur:ColorAdjustProtocol{
     var kernalName: String = "zoomBlur"
     
-    var value: Float = 0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = 0.0
     

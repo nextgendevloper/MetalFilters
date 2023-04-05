@@ -10,7 +10,7 @@ import Foundation
 class Posterize:ColorAdjustProtocol{
     var kernalName: String = "posterize"
     
-    var value: Float = 2.0
+    var value: [Float] = [2.0]
     
     var min: CGFloat = 2.0
     

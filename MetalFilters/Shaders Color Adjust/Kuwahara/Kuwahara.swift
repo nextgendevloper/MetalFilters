@@ -10,7 +10,7 @@ import Foundation
 class Kuwahara:ColorAdjustProtocol{
     var kernalName: String = "kuwahara"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = 0.0
     

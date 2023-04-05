@@ -11,5 +11,5 @@ import Foundation
 let temp = Temperature()
 var filters:[ColorAdjustProtocol] = [Temperature(),Luminous(),Exposure(),Gamma(),Brightness(),Saturation(),Contrast(),Sharpness(),Vibrance(),Vignette(),Tint(),Hue(),WhiteBalance(),ZoomBlur(),Pixellete(),HighlightShadow(),LuminousThersold()
                                      ]
-var colorAdjust:[ColorAdjustProtocol] = [PolkaDot(),CrossHetch(),Sketch(),Toon(),Posterize(),Kuwahara(),Swirl(),Pinch(),Bludge(),Sobel(),BilateralBlur(),GlassSphere()
+var colorAdjust:[ColorAdjustProtocol] = [ChromaKeyBlend(),Monochrome(),PolkaDot(),CrossHetch(),Sketch(),Toon(),Posterize(),Kuwahara(),Swirl(),Pinch(),Bludge(),Sobel(),BilateralBlur(),GlassSphere(),Emposs()
 ]

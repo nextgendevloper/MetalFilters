@@ -10,7 +10,7 @@ import Foundation
 class HalfTone:ColorAdjustProtocol{
     var kernalName: String = "halftone"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = 0.9
     

@@ -10,7 +10,7 @@ import Foundation
 class Brightness:ColorAdjustProtocol{
     var kernalName: String = "brightness"
     
-    var value: Float = 0.0
+    var value: [Float] = [0.0]
     
     var min: CGFloat = -100.0
     
